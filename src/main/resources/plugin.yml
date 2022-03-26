@@ -1,0 +1,22 @@
+name: PacketTracker
+version: '${project.version}'
+main: com.github.sandtechnology.packettracker.PacketTracker
+prefix: PacketTracker
+depend: [ ProtocolLib ]
+authors: [ sandtechnology ]
+description: Tracking packet from server!
+commands:
+  packetSum:
+    description: Packet Summary
+    permission: packettracker.sum
+  packetDetail:
+    description: Packet detail for a spetific player
+    usage: /packetDetail <player>
+    permission: packettracker.sum
+  packetDetailRealTime:
+    description: Packet detail for a spetific player
+    usage: /packetDetailRealTime <player>
+    permission: packettracker.sum
+permissions:
+  packettracker.sum:
+    default: op
